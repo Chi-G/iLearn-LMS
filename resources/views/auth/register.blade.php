@@ -223,10 +223,6 @@
         <div class="container">
             <div class="td_page_heading_in">
                 <h1 class="td_white_color td_fs_48 td_mb_10">Register</h1>
-                {{-- <ol class="breadcrumb m-0 td_fs_20 td_opacity_8 td_semibold td_white_color">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active">Signup</li>
-                </ol> --}}
             </div>
         </div>
         <div class="td_page_heading_shape_1 position-absolute td_hover_layer_3"></div>
@@ -263,7 +259,8 @@
                                     id="name" type="name" name="name" placeholder="Full Name *">
                                 <x-input-error :messages="$errors->get('name')" class="mt-2" />
                                 <input type="text" class="td_form_field td_mb_30 td_medium td_white_bg"
-                                    placeholder="Phone *">
+                                    id="phone" name="phone" placeholder="Phone *">
+                                <x-input-error :messages="$errors->get('phone')" class="mt-2" />
                                 <input type="text" class="td_form_field td_mb_30 td_medium td_white_bg"
                                     id="email" name="email" type="email" placeholder="Email *">
                                 <x-input-error :messages="$errors->get('email')" class="mt-2" />
