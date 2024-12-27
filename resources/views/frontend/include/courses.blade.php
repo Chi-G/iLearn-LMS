@@ -31,7 +31,8 @@
                             <div class="td_card td_style_5 td_type_1">
                                 <a href="course-details.html" class="td_card_thumb">
                                     <span class="td_card_thumb_in">
-                                        <img src="assets/img/home_3/course_thumb_1.jpg" alt="">
+                                        <img src="{{ asset('frontend/assets/img/home_3/course_thumb_1.jpg') }}"
+                                            alt="">
                                         <span class="td_card_label td_fs_14 td_white_color td_accent_bg">New</span>
                                     </span>
                                 </a>

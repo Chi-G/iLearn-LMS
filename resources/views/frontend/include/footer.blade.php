@@ -4,7 +4,7 @@
             <div class="td_footer_col">
                 <div class="td_footer_widget">
                     <div class="td_footer_text_widget td_fs_18">
-                        <img src="assets/img/footer_logo_v2.svg" alt="Logo">
+                        <img src="{{ asset('frontend/assets/img/footer_logo_v2.svg') }}" alt="Logo">
                         <p>Far far away, behind the word mountains, far from the Consonantia, there live the blind
                             texts.</p>
                     </div>

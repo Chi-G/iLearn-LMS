@@ -37,10 +37,10 @@
                         </ul>
                     </div>
                     <div class="td_top_header_right">
-                        <span>
-                            <a href="signin.html" class="">Login</a>/
-                            <a href="signup.html" class="">Register</a>
-                        </span>
+                        <register>
+                            <a href="{{ route('login') }}" class="">Login</a>/
+                            <a href="{{ route('register') }}" class="">Register</a>
+                        </register>
                         <a href="#" class="td_btn td_style_1 td_medium">
                             <span class="td_btn_in td_white_color td_accent_bg">
                                 <span>Apply Now</span>
@@ -222,11 +222,11 @@
         data-src="{{ asset('frontend/assets/img/others/page_heading_bg.jpg') }}">
         <div class="container">
             <div class="td_page_heading_in">
-                <h1 class="td_white_color td_fs_48 td_mb_10">Signin</h1>
-                <ol class="breadcrumb m-0 td_fs_20 td_opacity_8 td_semibold td_white_color">
+                <h1 class="td_white_color td_fs_48 td_mb_10">Login</h1>
+                {{-- <ol class="breadcrumb m-0 td_fs_20 td_opacity_8 td_semibold td_white_color">
                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                     <li class="breadcrumb-item active">Signin</li>
-                </ol>
+                </ol> --}}
             </div>
         </div>
         <div class="td_page_heading_shape_1 position-absolute td_hover_layer_3"></div>
@@ -251,10 +251,11 @@
                 <div class="col-lg-6">
                     <div class="td_form_card td_style_1 td_radius_10 td_gray_bg_5">
                         <div class="td_form_card_in">
-                            <h2 class="td_fs_36 td_mb_20">SIGN IN</h2>
+                            <h2 class="td_fs_36 td_mb_20">Login</h2>
                             <hr>
 
                             <div class="td_height_30 td_height_lg_30"></div>
+                            <x-auth-session-status class="mb-4" :status="session('status')" />
                             <form method="POST" action="{{ route('login') }}">
                                 @csrf
 
