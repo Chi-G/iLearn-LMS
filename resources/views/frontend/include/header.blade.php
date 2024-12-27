@@ -134,7 +134,8 @@
                 </div>
                 <div class="td_main_header_right">
                     <div class="td_header_btns">
-                        <a href="signin.html" class="td_btn td_style_1 td_type_1 td_radius_30 td_medium td_with_shadow">
+                        <a href="{{ route('login') }}"
+                            class="td_btn td_style_1 td_type_1 td_radius_30 td_medium td_with_shadow">
                             <span class="td_btn_in td_accent_color td_white_bg">
                                 <span>Sign in</span>
                                 <svg width="19" height="20" viewBox="0 0 19 20" fill="none"
@@ -148,7 +149,8 @@
                                 </svg>
                             </span>
                         </a>
-                        <a href="signup.html" class="td_btn td_style_1 td_radius_30 td_medium td_with_shadow">
+                        <a href="{{ route('register') }}"
+                            class="td_btn td_style_1 td_radius_30 td_medium td_with_shadow">
                             <span class="td_btn_in td_white_color td_accent_bg">
                                 <span>Sign up</span>
                                 <svg width="19" height="20" viewBox="0 0 19 20" fill="none"
