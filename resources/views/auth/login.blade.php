@@ -4,6 +4,12 @@
 <head>
     <!-- Meta Tags -->
     @include('frontend.include.css')
+
+    <style>
+        .error-message {
+            color: red;
+        }
+    </style>
 </head>
 
 <body>
@@ -261,10 +267,10 @@
 
                                 <input type="text" class="td_form_field td_mb_30 td_medium td_white_bg"
                                     name="email" type="email" id="email" placeholder="Email *">
-                                <x-input-error :messages="$errors->get('email')" class="mt-2" />
+                                <x-input-error :messages="$errors->get('email')" class="mt-2 error-message" />
                                 <input type="password" class="td_form_field td_mb_10 td_medium td_white_bg"
                                     id="password" type="password" name="password" placeholder="Password *">
-                                <x-input-error :messages="$errors->get('password')" class="mt-2" />
+                                <x-input-error :messages="$errors->get('password')" class="mt-2 error-message" />
                                 <div class="td_form_card_text_2 td_mb_50">
                                     <div><a href="{{ route('password.request') }}"
                                             class="td_semibold td_accent_color">Forgot Password?</a>

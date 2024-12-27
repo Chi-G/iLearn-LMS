@@ -4,6 +4,12 @@
 <head>
     <!-- Meta Tags -->
     @include('frontend.include.css')
+
+    <style>
+        .error-message {
+            color: red;
+        }
+    </style>
 </head>
 
 <body>
@@ -257,20 +263,25 @@
 
                                 <input type="text" class="td_form_field td_mb_30 td_medium td_white_bg"
                                     id="name" type="name" name="name" placeholder="Full Name *">
-                                <x-input-error :messages="$errors->get('name')" class="mt-2" />
+                                <x-input-error :messages="$errors->get('name')" class="mt-2 error-message" />
+
                                 <input type="text" class="td_form_field td_mb_30 td_medium td_white_bg"
                                     id="phone" name="phone" placeholder="Phone *">
                                 <x-input-error :messages="$errors->get('phone')" class="mt-2" />
+
                                 <input type="text" class="td_form_field td_mb_30 td_medium td_white_bg"
                                     id="email" name="email" type="email" placeholder="Email *">
-                                <x-input-error :messages="$errors->get('email')" class="mt-2" />
+                                <x-input-error :messages="$errors->get('email')" class="mt-2 error-message" />
+
                                 <input type="password" class="td_form_field td_mb_30 td_medium td_white_bg"
                                     id="password" type="password" name="password" placeholder="Password *">
-                                <x-input-error :messages="$errors->get('password')" class="mt-2" />
+                                <x-input-error :messages="$errors->get('password')" class="mt-2 error-message" />
+
                                 <input type="password" class="td_form_field td_mb_30 td_medium td_white_bg"
                                     id="password_confirmation" type="password" name="password_confirmation"
                                     placeholder="Password Confirmation *">
-                                <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
+                                <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2 error-message" />
+
                                 <div class="td_form_card_bottom td_mb_25">
                                     <button type="submit" class="td_btn td_style_1 td_radius_10 td_medium">
                                         <span class="td_btn_in td_white_color td_accent_bg">
