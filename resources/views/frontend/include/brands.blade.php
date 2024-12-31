@@ -30,13 +30,13 @@
                             </a>
                         </div>
                         <div class="td_card_thumb">
-                            <img src="assets/img/home_2/card_img_1.png" alt="">
+                            <img src="{{ asset('frontend/assets/img/home_2/card_img_1.png') }}" alt="">
                         </div>
                         <div class="td_card_1">
-                            <img src="assets/img/home_2/card_shape_1.svg" alt="">
+                            <img src="{{ asset('frontned/assets/img/home_2/card_shape_1.svg') }}" alt="">
                         </div>
                         <div class="td_card_2">
-                            <img src="assets/img/home_2/card_shape_2.svg" alt="">
+                            <img src="{{ asset('frontned/assets/img/home_2/card_shape_1.svg') }}" alt="">
                         </div>
                     </div>
                 </div>
@@ -65,13 +65,13 @@
                             </a>
                         </div>
                         <div class="td_card_thumb">
-                            <img src="assets/img/home_2/card_img_2.png" alt="">
+                            <img src="{{ asset('frontend/assets/img/home_2/card_img_2.png') }}" alt="">
                         </div>
                         <div class="td_card_1">
-                            <img src="assets/img/home_2/card_shape_1.svg" alt="">
+                            <img src="{{ asset('frontend/assets/img/home_2/card_shape_1.svg') }}" alt="">
                         </div>
                         <div class="td_card_2">
-                            <img src="assets/img/home_2/card_shape_2.svg" alt="">
+                            <img src="{{ asset('frontend/assets/img/home_2/card_shape_1.svg') }}" alt="">
                         </div>
                     </div>
                 </div>
@@ -91,32 +91,32 @@
                 <div class="td_slider_wrapper">
                     <div class="td_slide">
                         <div class="td_brand td_style_1">
-                            <img src="assets/img/home_2/brand_1.svg" alt="">
+                            <img src="{{ asset('frontend/assets/img/home_2/brand_1.svg') }}" alt="">
                         </div>
                     </div>
                     <div class="td_slide">
                         <div class="td_brand td_style_1">
-                            <img src="assets/img/home_2/brand_2.svg" alt="">
+                            <img src="{{ asset('frontend/assets/img/home_2/brand_2.svg') }}" alt="">
                         </div>
                     </div>
                     <div class="td_slide">
                         <div class="td_brand td_style_1">
-                            <img src="assets/img/home_2/brand_3.svg" alt="">
+                            <img src="{{ asset('frontend/assets/img/home_2/brand_3.svg') }}" alt="">
                         </div>
                     </div>
                     <div class="td_slide">
                         <div class="td_brand td_style_1">
-                            <img src="assets/img/home_2/brand_4.svg" alt="">
+                            <img src="{{ asset('frontend/assets/img/home_2/brand_4.svg') }}" alt="">
                         </div>
                     </div>
                     <div class="td_slide">
                         <div class="td_brand td_style_1">
-                            <img src="assets/img/home_2/brand_5.svg" alt="">
+                            <img src="{{ asset('frontend/assets/img/home_2/brand_5.svg') }}" alt="">
                         </div>
                     </div>
                     <div class="td_slide">
                         <div class="td_brand td_style_1">
-                            <img src="assets/img/home_2/brand_6.svg" alt="">
+                            <img src="{{ asset('frontend/assets/img/home_2/brand_6.svg') }}" alt="">
                         </div>
                     </div>
                 </div>

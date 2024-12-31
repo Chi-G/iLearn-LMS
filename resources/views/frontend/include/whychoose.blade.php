@@ -1,6 +1,6 @@
 <section class="td_gray_bg_4 td_shape_section_1">
     <div class="td_shape td_shape_position_1">
-        <img src="assets/img/home_2/why_choose_us_shape_1.svg" alt="">
+        <img src="{{ asset('frontend/assets/img/home_2/why_choose_us_shape_1.svg') }}" alt="">
     </div>
     <div class="td_shape td_shape_position_2"></div>
     <div class="td_shape td_shape_position_3"></div>
@@ -9,15 +9,15 @@
         <div class="row align-items-center td_gap_y_40">
             <div class="col-xl-6">
                 <div class="td_image_box td_style_1">
-                    <img src="assets/img/home_2/why_chose_us_img.jpg" alt=""
+                    <img src="{{ asset('frontend/assets/img/home_2/why_chose_us_img.jpg') }}" alt=""
                         class="td_image_box_thumb wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
                     <div class="td_avatars_wrap td_type_2 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
                         <h3 class="mb-0 td_fs_24 td_semibold">10k+ Active Students</h3>
                         <div class="td_avatars">
-                            <div><img src="assets/img/home_2/avatar_1.png" alt=""></div>
-                            <div><img src="assets/img/home_2/avatar_2.png" alt=""></div>
-                            <div><img src="assets/img/home_2/avatar_3.png" alt=""></div>
-                            <div><img src="assets/img/home_2/avatar_4.png" alt=""></div>
+                            <div><img src="{{ asset('frontend/assets/img/home_2/avatar_1.png') }}" alt=""></div>
+                            <div><img src="{{ asset('frontend/assets/img/home_2/avatar_2.png') }}" alt=""></div>
+                            <div><img src="{{ asset('frontend/assets/img/home_2/avatar_3.png') }}" alt=""></div>
+                            <div><img src="{{ asset('frontend/assets/img/home_2/avatar_4.png') }}" alt=""></div>
                             <div class="td_avatar_end td_fs_18 td_medium td_center">10k+</div>
                         </div>
                     </div>

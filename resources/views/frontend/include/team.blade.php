@@ -1,9 +1,9 @@
 <section class="td_shape_section_8 td_hobble">
     <div class="td_shape_position_1 position-absolute td_hover_layer_3">
-        <img src="assets/img/home_2/team_shape_1.svg" alt="">
+        <img src="{{ asset('frontend/assets/img/home_2/team_shape_1.svg') }}" alt="">
     </div>
     <div class="td_shape_position_2 position-absolute td_hover_layer_3">
-        <img src="assets/img/home_2/team_shape_2.svg" alt="">
+        <img src="{{ asset('frontend/assets/img/home_2/team_shape_1.svg') }}" alt="">
     </div>
     <div class="td_height_112 td_height_lg_75"></div>
     <div class="container">
@@ -21,7 +21,8 @@
         <div class="row td_gap_y_30">
             <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
                 <div class="td_team td_style_1 text-center position-relative">
-                    <img src="assets/img/home_2/team_member_1.jpg" alt="" class="w-100 td_radius_10">
+                    <img src="{{ asset('frontend/assets/img/home_2/team_member_1.jpg') }}" alt=""
+                        class="w-100 td_radius_10">
                     <div class="td_team_info td_white_bg">
                         <h3 class="td_team_member_title td_fs_18 td_semibold mb-0">Mr. Lucas Johans</h3>
                         <p class="td_team_member_designation mb-0 td_fs_14 td_opacity_7 td_heading_color">Head of
@@ -31,7 +32,8 @@
             </div>
             <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
                 <div class="td_team td_style_1 text-center position-relative">
-                    <img src="assets/img/home_2/team_member_2.jpg" alt="" class="w-100 td_radius_10">
+                    <img src="{{ asset('frontend/assets/img/home_2/team_member_2.jpg') }}" alt=""
+                        class="w-100 td_radius_10">
                     <div class="td_team_info td_white_bg">
                         <h3 class="td_team_member_title td_fs_18 td_semibold mb-0">Leslie Alexander</h3>
                         <p class="td_team_member_designation mb-0 td_fs_14 td_opacity_7 td_heading_color">Online
@@ -41,7 +43,8 @@
             </div>
             <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.35s">
                 <div class="td_team td_style_1 text-center position-relative">
-                    <img src="assets/img/home_2/team_member_3.jpg" alt="" class="w-100 td_radius_10">
+                    <img src="{{ asset('frontend/assets/img/home_2/team_member_3.jpg') }}" alt=""
+                        class="w-100 td_radius_10">
                     <div class="td_team_info td_white_bg">
                         <h3 class="td_team_member_title td_fs_18 td_semibold mb-0">Darrell Steward</h3>
                         <p class="td_team_member_designation mb-0 td_fs_14 td_opacity_7 td_heading_color">Seo
@@ -51,7 +54,8 @@
             </div>
             <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
                 <div class="td_team td_style_1 text-center position-relative">
-                    <img src="assets/img/home_2/team_member_4.jpg" alt="" class="w-100 td_radius_10">
+                    <img src="{{ asset('frontend/assets/img/home_2/team_member_4.jpg') }}" alt=""
+                        class="w-100 td_radius_10">
                     <div class="td_team_info td_white_bg">
                         <h3 class="td_team_member_title td_fs_18 td_semibold mb-0">Leslie Alexander</h3>
                         <p class="td_team_member_designation mb-0 td_fs_14 td_opacity_7 td_heading_color">Online

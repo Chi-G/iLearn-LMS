@@ -1,15 +1,15 @@
 <section class="td_shape_section_7 td_hobble">
     <div class="td_shape_position_1 position-absolute td_hover_layer_3">
-        <img src="assets/img/home_2/testimonial_shape_1.svg" alt="">
+        <img src="{{ asset('frontend/assets/img/home_2/testimonial_shape_1.svg') }}" alt="">
     </div>
     <div class="td_shape_position_2 position-absolute td_hover_layer_5">
-        <img src="assets/img/home_2/testimonial_shape_2.svg" alt="">
+        <img src="{{ asset('frontend/assets/img/home_2/testimonial_shape_1.svg') }}" alt="">
     </div>
     <div class="td_shape_position_3 position-absolute td_hover_layer_3">
-        <img src="assets/img/home_2/testimonial_shape_3.svg" alt="">
+        <img src="{{ asset('frontend/assets/img/home_2/testimonial_shape_1.svg') }}" alt="">
     </div>
     <div class="td_shape_position_4 position-absolute td_hover_layer_5">
-        <img src="assets/img/home_2/testimonial_shape_4.svg" alt="">
+        <img src="{{ asset('frontend/assets/img/home_2/testimonial_shape_1.svg') }}" alt="">
     </div>
     <div class="td_height_112 td_height_lg_75"></div>
     <div class="container">
@@ -42,7 +42,7 @@
                                 </svg>
                             </span>
                             <div class="td_testimonial_meta td_mb_24">
-                                <img src="assets/img/home_1/avatar_1.png" alt="">
+                                <img src="{{ asset('frontend/assets/img/home_1/avatar_1.png') }}" alt="">
                                 <div class="td_testimonial_meta_right">
                                     <h3 class="td_fs_24 td_semibold td_mb_2">Marvin McKinney</h3>
                                     <p class="td_fs_14 mb-0 td_heading_color td_opacity_7">15th Batch Students</p>
@@ -80,7 +80,7 @@
                                 </svg>
                             </span>
                             <div class="td_testimonial_meta td_mb_24">
-                                <img src="assets/img/home_2/avatar_1.png" alt="">
+                                <img src="{{ asset('frontend/assets/img/home_2/avatar_1.png') }}" alt="">
                                 <div class="td_testimonial_meta_right">
                                     <h3 class="td_fs_24 td_semibold td_mb_2">Marvin McKinney</h3>
                                     <p class="td_fs_14 mb-0 td_heading_color td_opacity_7">10th Batch Students</p>
@@ -118,7 +118,7 @@
                                 </svg>
                             </span>
                             <div class="td_testimonial_meta td_mb_24">
-                                <img src="assets/img/home_1/avatar_1.png" alt="">
+                                <img src="{{ asset('frontend/assets/img/home_1/avatar_1.png') }}" alt="">
                                 <div class="td_testimonial_meta_right">
                                     <h3 class="td_fs_24 td_semibold td_mb_2">Marvin McKinney</h3>
                                     <p class="td_fs_14 mb-0 td_heading_color td_opacity_7">15th Batch Students</p>

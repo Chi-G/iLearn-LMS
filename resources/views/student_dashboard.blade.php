@@ -175,11 +175,11 @@
                         </div>
                         <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
                             <li>
-                                <a href="index.html"
+                                <a href="#"
                                     class="flex font-medium px-4 py-2 hover:bg-gray-200 dark:hover:bg-dark-icon dark:hover:text-white">Dashboard</a>
                             </li>
                             <li>
-                                <a href="account-setting.html"
+                                <a href="#"
                                     class="flex font-medium px-4 py-2 hover:bg-gray-200 dark:hover:bg-dark-icon dark:hover:text-white">Settings</a>
                             </li>
                         </ul>
@@ -191,7 +191,7 @@
                         <div class="py-2">
                             <a href="{{ route('logout') }}"
                                 class="flex font-medium px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 dark:hover:bg-dark-icon dark:text-gray-200 dark:hover:text-white"
-                                onclick="event.preventDefault(); document.getElementById('logout-form').submit();">>Sign
+                                onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Sign
                                 Out
                             </a>
                         </div>

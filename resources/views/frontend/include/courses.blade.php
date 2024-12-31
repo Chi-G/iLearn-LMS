@@ -39,11 +39,12 @@
                                 <div class="td_card_content">
                                     <ul class="td_card_meta td_mp_0 td_fs_16 td_heading_color">
                                         <li>
-                                            <img src="assets/img/icons/user_3.svg" alt="">
+                                            <img src="{{ asset('frontend/assets/img/icons/user_3.svg') }}"
+                                                alt="">
                                             <span class="td_opacity_7">150 Seats</span>
                                         </li>
                                         <li>
-                                            <img src="assets/img/icons/book.svg" alt="">
+                                            <img src="{{ asset('frontend/assets/img/icons/book.svg') }}" alt="">
                                             <span class="td_opacity_7">12 Semesters</span>
                                         </li>
                                     </ul>
@@ -88,17 +89,19 @@
                             <div class="td_card td_style_5 td_type_1">
                                 <a href="course-details.html" class="td_card_thumb">
                                     <span class="td_card_thumb_in">
-                                        <img src="assets/img/home_3/course_thumb_2.jpg" alt="">
+                                        <img src="{{ asset('frontend/assets/img/home_3/course_thumb_2.jpg') }}"
+                                            alt="">
                                     </span>
                                 </a>
                                 <div class="td_card_content">
                                     <ul class="td_card_meta td_mp_0 td_fs_16 td_heading_color">
                                         <li>
-                                            <img src="assets/img/icons/user_3.svg" alt="">
+                                            <img src="{{ asset('frontend/assets/img/icons/user_3.svg') }}"
+                                                alt="">
                                             <span class="td_opacity_7">120 Seats</span>
                                         </li>
                                         <li>
-                                            <img src="assets/img/icons/book.svg" alt="">
+                                            <img src="{{ asset('frontend/assets/img/icons/book.svg') }}" alt="">
                                             <span class="td_opacity_7">15 Semesters</span>
                                         </li>
                                     </ul>
@@ -143,7 +146,8 @@
                             <div class="td_card td_style_5 td_type_1">
                                 <a href="course-details.html" class="td_card_thumb">
                                     <span class="td_card_thumb_in">
-                                        <img src="assets/img/home_3/course_thumb_3.jpg" alt="">
+                                        <img src="{{ asset('frontend/assets/img/home_3/course_thumb_3.jpg') }}"
+                                            alt="">
                                         <span class="td_card_label td_fs_14 td_white_color td_accent_bg">Best
                                             Seller</span>
                                     </span>
@@ -151,11 +155,13 @@
                                 <div class="td_card_content">
                                     <ul class="td_card_meta td_mp_0 td_fs_16 td_heading_color">
                                         <li>
-                                            <img src="assets/img/icons/user_3.svg" alt="">
+                                            <img src="{{ asset('frontend/assets/img/icons/user_3.svg') }}"
+                                                alt="">
                                             <span class="td_opacity_7">200 Seats</span>
                                         </li>
                                         <li>
-                                            <img src="assets/img/icons/book.svg" alt="">
+                                            <img src="{{ asset('frontend/assets/img/icons/book.svg') }}"
+                                                alt="">
                                             <span class="td_opacity_7">20 Semesters</span>
                                         </li>
                                     </ul>
@@ -200,17 +206,20 @@
                             <div class="td_card td_style_5 td_type_1">
                                 <a href="course-details.html" class="td_card_thumb">
                                     <span class="td_card_thumb_in">
-                                        <img src="assets/img/home_3/course_thumb_4.jpg" alt="">
+                                        <img src="{{ asset('frontend/assets/img/home_3/course_thumb_4.jpg') }}"
+                                            alt="">
                                     </span>
                                 </a>
                                 <div class="td_card_content">
                                     <ul class="td_card_meta td_mp_0 td_fs_16 td_heading_color">
                                         <li>
-                                            <img src="assets/img/icons/user_3.svg" alt="">
+                                            <img src="{{ asset('frontend/assets/img/icons/user_3.svg') }}"
+                                                alt="">
                                             <span class="td_opacity_7">170 Seats</span>
                                         </li>
                                         <li>
-                                            <img src="assets/img/icons/book.svg" alt="">
+                                            <img src="{{ asset('frontend/assets/img/icons/book.svg') }}"
+                                                alt="">
                                             <span class="td_opacity_7">19 Semesters</span>
                                         </li>
                                     </ul>
@@ -258,17 +267,20 @@
                             <div class="td_card td_style_5 td_type_1">
                                 <a href="course-details.html" class="td_card_thumb">
                                     <span class="td_card_thumb_in">
-                                        <img src="assets/img/home_3/course_thumb_2.jpg" alt="">
+                                        <img src="{{ asset('frontend/assets/img/home_3/course_thumb_2.jp') }}g"
+                                            alt="">
                                     </span>
                                 </a>
                                 <div class="td_card_content">
                                     <ul class="td_card_meta td_mp_0 td_fs_16 td_heading_color">
                                         <li>
-                                            <img src="assets/img/icons/user_3.svg" alt="">
+                                            <img src="{{ asset('frontend/assets/img/icons/user_3.svg') }}"
+                                                alt="">
                                             <span class="td_opacity_7">120 Seats</span>
                                         </li>
                                         <li>
-                                            <img src="assets/img/icons/book.svg" alt="">
+                                            <img src="{{ asset('frontend/assets/img/icons/book.svg') }}"
+                                                alt="">
                                             <span class="td_opacity_7">15 Semesters</span>
                                         </li>
                                     </ul>
@@ -313,7 +325,8 @@
                             <div class="td_card td_style_5 td_type_1">
                                 <a href="course-details.html" class="td_card_thumb">
                                     <span class="td_card_thumb_in">
-                                        <img src="assets/img/home_3/course_thumb_3.jpg" alt="">
+                                        <img src="{{ asset('frontend/assets/img/home_3/course_thumb_3.jpg') }}"
+                                            alt="">
                                         <span class="td_card_label td_fs_14 td_white_color td_accent_bg">Best
                                             Seller</span>
                                     </span>
@@ -321,11 +334,13 @@
                                 <div class="td_card_content">
                                     <ul class="td_card_meta td_mp_0 td_fs_16 td_heading_color">
                                         <li>
-                                            <img src="assets/img/icons/user_3.svg" alt="">
+                                            <img src="{{ asset('frontend/assets/img/icons/user_3.svg') }}"
+                                                alt="">
                                             <span class="td_opacity_7">200 Seats</span>
                                         </li>
                                         <li>
-                                            <img src="assets/img/icons/book.svg" alt="">
+                                            <img src="{{ asset('frontend/assets/img/icons/book.svg') }}"
+                                                alt="">
                                             <span class="td_opacity_7">20 Semesters</span>
                                         </li>
                                     </ul>
@@ -370,18 +385,21 @@
                             <div class="td_card td_style_5 td_type_1">
                                 <a href="course-details.html" class="td_card_thumb">
                                     <span class="td_card_thumb_in">
-                                        <img src="assets/img/home_3/course_thumb_1.jpg" alt="">
+                                        <img src="{{ asset('frontend/assets/img/home_3/course_thumb_1.jpg') }}"
+                                            alt="">
                                         <span class="td_card_label td_fs_14 td_white_color td_accent_bg">New</span>
                                     </span>
                                 </a>
                                 <div class="td_card_content">
                                     <ul class="td_card_meta td_mp_0 td_fs_16 td_heading_color">
                                         <li>
-                                            <img src="assets/img/icons/user_3.svg" alt="">
+                                            <img src="{{ asset('frontend/assets/img/icons/user_3.svg') }}"
+                                                alt="">
                                             <span class="td_opacity_7">150 Seats</span>
                                         </li>
                                         <li>
-                                            <img src="assets/img/icons/book.svg" alt="">
+                                            <img src="{{ asset('frontend/assets/img/icons/book.svg') }}"
+                                                alt="">
                                             <span class="td_opacity_7">12 Semesters</span>
                                         </li>
                                     </ul>
@@ -426,17 +444,20 @@
                             <div class="td_card td_style_5 td_type_1">
                                 <a href="course-details.html" class="td_card_thumb">
                                     <span class="td_card_thumb_in">
-                                        <img src="assets/img/home_3/course_thumb_4.jpg" alt="">
+                                        <img src="{{ asset('frontend/assets/img/home_3/course_thumb_4.jpg') }}"
+                                            alt="">
                                     </span>
                                 </a>
                                 <div class="td_card_content">
                                     <ul class="td_card_meta td_mp_0 td_fs_16 td_heading_color">
                                         <li>
-                                            <img src="assets/img/icons/user_3.svg" alt="">
+                                            <img src="{{ asset('frontend/assets/img/icons/user_3.svg') }}"
+                                                alt="">
                                             <span class="td_opacity_7">170 Seats</span>
                                         </li>
                                         <li>
-                                            <img src="assets/img/icons/book.svg" alt="">
+                                            <img src="{{ asset('frontend/assets/img/icons/book.svg') }}"
+                                                alt="">
                                             <span class="td_opacity_7">19 Semesters</span>
                                         </li>
                                     </ul>
@@ -484,7 +505,8 @@
                             <div class="td_card td_style_5 td_type_1">
                                 <a href="course-details.html" class="td_card_thumb">
                                     <span class="td_card_thumb_in">
-                                        <img src="assets/img/home_3/course_thumb_3.jpg" alt="">
+                                        <img src="{{ asset('frontend/assets/img/home_3/course_thumb_3.jpg') }}"
+                                            alt="">
                                         <span class="td_card_label td_fs_14 td_white_color td_accent_bg">Best
                                             Seller</span>
                                     </span>
@@ -492,11 +514,13 @@
                                 <div class="td_card_content">
                                     <ul class="td_card_meta td_mp_0 td_fs_16 td_heading_color">
                                         <li>
-                                            <img src="assets/img/icons/user_3.svg" alt="">
+                                            <img src="{{ asset('frontend/assets/img/icons/user_3.svg') }}"
+                                                alt="">
                                             <span class="td_opacity_7">200 Seats</span>
                                         </li>
                                         <li>
-                                            <img src="assets/img/icons/book.svg" alt="">
+                                            <img src="{{ asset('frontend/assets/img/icons/book.svg') }}"
+                                                alt="">
                                             <span class="td_opacity_7">20 Semesters</span>
                                         </li>
                                     </ul>
@@ -541,17 +565,20 @@
                             <div class="td_card td_style_5 td_type_1">
                                 <a href="course-details.html" class="td_card_thumb">
                                     <span class="td_card_thumb_in">
-                                        <img src="assets/img/home_3/course_thumb_4.jpg" alt="">
+                                        <img src="{{ asset('frontend/assets/img/home_3/course_thumb_4.jpg') }}"
+                                            alt="">
                                     </span>
                                 </a>
                                 <div class="td_card_content">
                                     <ul class="td_card_meta td_mp_0 td_fs_16 td_heading_color">
                                         <li>
-                                            <img src="assets/img/icons/user_3.svg" alt="">
+                                            <img src="{{ asset('frontend/assets/img/icons/user_3.svg') }}"
+                                                alt="">
                                             <span class="td_opacity_7">170 Seats</span>
                                         </li>
                                         <li>
-                                            <img src="assets/img/icons/book.svg" alt="">
+                                            <img src="{{ asset('frontend/assets/img/icons/book.svg') }}"
+                                                alt="">
                                             <span class="td_opacity_7">19 Semesters</span>
                                         </li>
                                     </ul>
@@ -595,18 +622,21 @@
                             <div class="td_card td_style_5 td_type_1">
                                 <a href="course-details.html" class="td_card_thumb">
                                     <span class="td_card_thumb_in">
-                                        <img src="assets/img/home_3/course_thumb_1.jpg" alt="">
+                                        <img src="{{ asset('frontend/assets/img/home_3/course_thumb_1.jpg') }}"
+                                            alt="">
                                         <span class="td_card_label td_fs_14 td_white_color td_accent_bg">New</span>
                                     </span>
                                 </a>
                                 <div class="td_card_content">
                                     <ul class="td_card_meta td_mp_0 td_fs_16 td_heading_color">
                                         <li>
-                                            <img src="assets/img/icons/user_3.svg" alt="">
+                                            <img src="{{ asset('frontend/assets/img/icons/user_3.svg') }}"
+                                                alt="">
                                             <span class="td_opacity_7">150 Seats</span>
                                         </li>
                                         <li>
-                                            <img src="assets/img/icons/book.svg" alt="">
+                                            <img src="{{ asset('frontend/assets/img/icons/book.svg') }}"
+                                                alt="">
                                             <span class="td_opacity_7">12 Semesters</span>
                                         </li>
                                     </ul>
@@ -651,17 +681,20 @@
                             <div class="td_card td_style_5 td_type_1">
                                 <a href="course-details.html" class="td_card_thumb">
                                     <span class="td_card_thumb_in">
-                                        <img src="assets/img/home_3/course_thumb_2.jpg" alt="">
+                                        <img src="{{ asset('frontend/assets/img/home_3/course_thumb_2.jpg') }}"
+                                            alt="">
                                     </span>
                                 </a>
                                 <div class="td_card_content">
                                     <ul class="td_card_meta td_mp_0 td_fs_16 td_heading_color">
                                         <li>
-                                            <img src="assets/img/icons/user_3.svg" alt="">
+                                            <img src="{{ asset('frontend/assets/img/icons/user_3.svg') }}"
+                                                alt="">
                                             <span class="td_opacity_7">120 Seats</span>
                                         </li>
                                         <li>
-                                            <img src="assets/img/icons/book.svg" alt="">
+                                            <img src="{{ asset('frontend/assets/img/icons/book.svg') }}"
+                                                alt="">
                                             <span class="td_opacity_7">15 Semesters</span>
                                         </li>
                                     </ul>
@@ -710,7 +743,8 @@
                             <div class="td_card td_style_5 td_type_1">
                                 <a href="course-details.html" class="td_card_thumb">
                                     <span class="td_card_thumb_in">
-                                        <img src="assets/img/home_3/course_thumb_3.jpg" alt="">
+                                        <img src="{{ asset('frontend/assets/img/home_3/course_thumb_3.jpg') }}"
+                                            alt="">
                                         <span class="td_card_label td_fs_14 td_white_color td_accent_bg">Best
                                             Seller</span>
                                     </span>
@@ -718,11 +752,13 @@
                                 <div class="td_card_content">
                                     <ul class="td_card_meta td_mp_0 td_fs_16 td_heading_color">
                                         <li>
-                                            <img src="assets/img/icons/user_3.svg" alt="">
+                                            <img src="{{ asset('frontend/assets/img/icons/user_3.svg') }}"
+                                                alt="">
                                             <span class="td_opacity_7">200 Seats</span>
                                         </li>
                                         <li>
-                                            <img src="assets/img/icons/book.svg" alt="">
+                                            <img src="{{ asset('frontend/assets/img/icons/book.svg') }}"
+                                                alt="">
                                             <span class="td_opacity_7">20 Semesters</span>
                                         </li>
                                     </ul>
@@ -767,18 +803,21 @@
                             <div class="td_card td_style_5 td_type_1">
                                 <a href="course-details.html" class="td_card_thumb">
                                     <span class="td_card_thumb_in">
-                                        <img src="assets/img/home_3/course_thumb_1.jpg" alt="">
+                                        <img src="{{ asset('frontend/assets/img/home_3/course_thumb_1.jpg') }}"
+                                            alt="">
                                         <span class="td_card_label td_fs_14 td_white_color td_accent_bg">New</span>
                                     </span>
                                 </a>
                                 <div class="td_card_content">
                                     <ul class="td_card_meta td_mp_0 td_fs_16 td_heading_color">
                                         <li>
-                                            <img src="assets/img/icons/user_3.svg" alt="">
+                                            <img src="{{ asset('frontend/assets/img/icons/user_3.svg') }}"
+                                                alt="">
                                             <span class="td_opacity_7">150 Seats</span>
                                         </li>
                                         <li>
-                                            <img src="assets/img/icons/book.svg" alt="">
+                                            <img src="{{ asset('frontend/assets/img/icons/book.svg') }}"
+                                                alt="">
                                             <span class="td_opacity_7">12 Semesters</span>
                                         </li>
                                     </ul>
@@ -823,17 +862,20 @@
                             <div class="td_card td_style_5 td_type_1">
                                 <a href="course-details.html" class="td_card_thumb">
                                     <span class="td_card_thumb_in">
-                                        <img src="assets/img/home_3/course_thumb_2.jpg" alt="">
+                                        <img src="{{ asset('frontend/assets/img/home_3/course_thumb_2.jpg') }}"
+                                            alt="">
                                     </span>
                                 </a>
                                 <div class="td_card_content">
                                     <ul class="td_card_meta td_mp_0 td_fs_16 td_heading_color">
                                         <li>
-                                            <img src="assets/img/icons/user_3.svg" alt="">
+                                            <img src="{{ asset('frontend/assets/img/icons/user_3.svg') }}"
+                                                alt="">
                                             <span class="td_opacity_7">120 Seats</span>
                                         </li>
                                         <li>
-                                            <img src="assets/img/icons/book.svg" alt="">
+                                            <img src="{{ asset('frontend/assets/img/icons/book.svg') }}"
+                                                alt="">
                                             <span class="td_opacity_7">15 Semesters</span>
                                         </li>
                                     </ul>
@@ -878,17 +920,20 @@
                             <div class="td_card td_style_5 td_type_1">
                                 <a href="course-details.html" class="td_card_thumb">
                                     <span class="td_card_thumb_in">
-                                        <img src="assets/img/home_3/course_thumb_4.jpg" alt="">
+                                        <img src="{{ asset('frontend/assets/img/home_3/course_thumb_4.jpg') }}"
+                                            alt="">
                                     </span>
                                 </a>
                                 <div class="td_card_content">
                                     <ul class="td_card_meta td_mp_0 td_fs_16 td_heading_color">
                                         <li>
-                                            <img src="assets/img/icons/user_3.svg" alt="">
+                                            <img src="{{ asset('frontend/assets/img/icons/user_3.svg') }}"
+                                                alt="">
                                             <span class="td_opacity_7">170 Seats</span>
                                         </li>
                                         <li>
-                                            <img src="assets/img/icons/book.svg" alt="">
+                                            <img src="{{ asset('frontend/assets/img/icons/book.svg') }}"
+                                                alt="">
                                             <span class="td_opacity_7">19 Semesters</span>
                                         </li>
                                     </ul>

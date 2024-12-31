@@ -22,7 +22,7 @@
             <div class="col-lg-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
                 <div class="td_card td_style_1 td_type_2 td_white_bg">
                     <a href="event-details.html" class="td_card_thumb d-block">
-                        <img src="assets/img/home_2/event_thumb_1.jpg" alt="">
+                        <img src="{{ asset('frontend/assets/img/home_2/event_thumb_1.jpg') }}" alt="">
                         <i class="fa-solid fa-arrow-up-right-from-square"></i>
                     </a>
                     <div class="td_card_info">
@@ -96,7 +96,7 @@
             <div class="col-lg-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
                 <div class="td_card td_style_1 td_type_2 td_white_bg">
                     <a href="event-details.html" class="td_card_thumb d-block">
-                        <img src="assets/img/home_2/event_thumb_2.jpg" alt="">
+                        <img src="{{ asset('frontend/assets/img/home_2/event_thumb_2.jpg') }}" alt="">
                         <i class="fa-solid fa-arrow-up-right-from-square"></i>
                     </a>
                     <div class="td_card_info">
@@ -170,7 +170,7 @@
             <div class="col-lg-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.35s">
                 <div class="td_card td_style_1 td_type_2 td_white_bg">
                     <a href="event-details.html" class="td_card_thumb d-block">
-                        <img src="assets/img/home_2/event_thumb_3.jpg" alt="">
+                        <img src="{{ asset('frontend/assets/img/home_2/event_thumb_3.jpg') }}" alt="">
                         <i class="fa-solid fa-arrow-up-right-from-square"></i>
                     </a>
                     <div class="td_card_info">
