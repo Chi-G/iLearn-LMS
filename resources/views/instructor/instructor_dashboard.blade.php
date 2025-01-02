@@ -12,10 +12,12 @@
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('backend/assets/images/favicon.ico') }}">
     <!-- Style CSS -->
     <link rel="stylesheet" href="{{ asset('backend/assets/css/output.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 </head>
 
 <body
     class="bg-body-light dark:bg-dark-body group-data-[theme-width=box]:container group-data-[theme-width=box]:max-w-screen-3xl xl:group-data-[theme-width=box]:px-4">
+
     <div id="loader" class="w-screen h-screen flex-center bg-white fixed inset-0 z-[9999]">
         <img src="{{ asset('backend/assets/images/loader.gif') }}" alt="loader">
     </div>
@@ -149,6 +151,12 @@
         </div>
     </header>
     <!-- End Header -->
+
+    @if (session('error'))
+        <div class="alert alert-danger">
+            {{ session('error') }}
+        </div>
+    @endif
 
     <!-- Start App Menu -->
     <div id="app-drawer"
@@ -1897,6 +1905,15 @@
     <script src="{{ asset('backend/assets/js/switcher.js') }}"></script>
     <script src="{{ asset('backend/assets/js/layout.js') }}"></script>
     <script src="{{ asset('backend/assets/js/main.js') }}"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+    <script>
+        @if (session('error'))
+            toastr.error("{{ session('error') }}");
+        @endif
+    </script>
 </body>
 
 </html>

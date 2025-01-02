@@ -16,7 +16,7 @@ class RedirectIfNotInstructor
              session()->flash('error', 'You are not authorized to access this page.');
              return redirect('/instructor/login');
         }
-
+ 
         return $next($request);
     }
 }
