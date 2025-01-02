@@ -1,3 +1,4 @@
+{{-- <script src="{{ mix('js/app.js') }}"></script> --}}
 <script src="{{ asset('frontend/assets/js/jquery-3.7.1.min.js') }}"></script>
 <script src="{{ asset('frontend/assets/js/jquery.slick.min.js') }}"></script>
 <script src="{{ asset('frontend/assets/js/odometer.js') }}"></script>

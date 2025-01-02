@@ -8,20 +8,20 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use DB;
 
-class UserTableSeeder extends Seeder
+class InstructorTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        DB::table('users')->insert([
+        DB::table('instructors')->insert([
 
-            //User
+            //Instructor
             [
-                'name' => 'User',
-                'username' => 'user',
-                'email' => 'user@gmail.com',
+                'name' => 'Instructor',
+                'username' => 'instructor',
+                'email' => 'instructor@gmail.com',
                 'password' => Hash::make('password'),
                 'status' => '1',
             ],

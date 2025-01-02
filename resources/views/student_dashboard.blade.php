@@ -105,54 +105,7 @@
                         </a>
                     </div>
                 </div>
-                <!-- Language Select Button -->
-                <div class="relative hidden md:block">
-                    <button type="button" data-popover-target="dropdownLanguage" data-popover-trigger="click"
-                        data-popover-placement="bottom-end"
-                        class="size-8 flex-center hover:bg-gray-200 dark:hover:bg-dark-icon rounded-md dk-theme-card-square">
-                        <img id="header-lang-img" src="{{ asset('backend/assets/images/flag/us.svg') }}" alt="flag"
-                            class="size-5 rounded-sm" title="English">
-                    </button>
-                    <!-- Dropdown -->
-                    <div id="dropdownLanguage"
-                        class="absolute invisible z-backdrop py-2 bg-white rounded-md shadow-md min-w-[10rem] flex flex-col dark:bg-dark-card-shade dk-theme-card-square">
-                        <a href="#"
-                            class="flex items-center gap-3 hover:bg-gray-200 px-4 py-2 dark:hover:bg-dark-icon relative after:absolute after:inset-0 after:size-full"
-                            data-lang="en" title="English">
-                            <img src="{{ asset('backend/assets/images/flag/us.svg') }}" alt="flag"
-                                class="object-cover size-4 rounded-50 dk-theme-card-square">
-                            <h6 class="font-medium text-gray-500 dark:text-white">English</h6>
-                        </a>
-                        <a href="#"
-                            class="flex items-center gap-3 hover:bg-gray-200 px-4 py-2 dark:hover:bg-dark-icon relative after:absolute after:inset-0 after:size-full"
-                            data-lang="sp" title="Spanish">
-                            <img src="{{ asset('backend/assets/images/flag/us.svg') }}" alt="flag"
-                                class="object-cover size-4 rounded-50 dk-theme-card-square">
-                            <h6 class="font-medium text-gray-500 dark:text-white">Spanish</h6>
-                        </a>
-                        <a href="#"
-                            class="flex items-center gap-3 hover:bg-gray-200 px-4 py-2 dark:hover:bg-dark-icon relative after:absolute after:inset-0 after:size-full"
-                            data-lang="fr" title="French">
-                            <img src="{{ asset('backend/assets/images/flag/us.svg') }}" alt="flag"
-                                class="object-cover size-4 rounded-50 dk-theme-card-square">
-                            <h6 class="font-medium text-gray-500 dark:text-white">French</h6>
-                        </a>
-                        <a href="#"
-                            class="flex items-center gap-3 hover:bg-gray-200 px-4 py-2 dark:hover:bg-dark-icon relative after:absolute after:inset-0 after:size-full"
-                            data-lang="it" title="Italian">
-                            <img src="{{ asset('backend/assets/images/flag/it.svg') }}" alt="flag"
-                                class="object-cover size-4 rounded-50 dk-theme-card-square">
-                            <h6 class="font-medium text-gray-500 dark:text-white">Italian</h6>
-                        </a>
-                        <a href="#"
-                            class="flex items-center gap-3 hover:bg-gray-200 px-4 py-2 dark:hover:bg-dark-icon relative after:absolute after:inset-0 after:size-full"
-                            data-lang="ar" title="Arabic">
-                            <img src="{{ asset('backend/assets/images/flag/it.svg') }}" alt="flag"
-                                class="object-cover size-4 rounded-50 dk-theme-card-square">
-                            <h6 class="font-medium text-gray-500 dark:text-white">Arabic</h6>
-                        </a>
-                    </div>
-                </div>
+
                 <!-- Border -->
                 <div class="w-[1px] h-header bg-gray-200 dark:bg-dark-border hidden sm:block"></div>
                 <!-- User Profile Button -->
@@ -167,16 +120,11 @@
                         class="invisible z-backdrop bg-white text-left divide-y divide-gray-100 rounded-lg shadow w-48 dark:bg-dark-card-shade dark:divide-dark-border-four dk-theme-card-square">
                         <div class="px-4 py-3 text-sm text-gray-500 dark:text-white">
                             <div class="card-title text-lg">Alex Janson</div>
-                            <div class="truncate"><a
-                                    href="https://template.codexshaper.com/cdn-cgi/l/email-protection"
-                                    class="__cf_email__"
-                                    data-cfemail="d7b6bbb2afe5e3e5e297b0bab6bebbf9b4b8ba">[email&#160;protected]</a>
-                            </div>
                         </div>
                         <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
                             <li>
-                                <a href="#"
-                                    class="flex font-medium px-4 py-2 hover:bg-gray-200 dark:hover:bg-dark-icon dark:hover:text-white">Dashboard</a>
+                                <a href="{{ route('profile.edit') }}"
+                                    class="flex font-medium px-4 py-2 hover:bg-gray-200 dark:hover:bg-dark-icon dark:hover:text-white">Profile</a>
                             </li>
                             <li>
                                 <a href="#"
@@ -184,8 +132,7 @@
                             </li>
                         </ul>
 
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST"
-                            style="display: none;">
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                             @csrf
                         </form>
                         <div class="py-2">

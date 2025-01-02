@@ -7,6 +7,7 @@
 <link rel="icon" href="{{ asset('frontend/assets/img/favicon.png') }}">
 <!-- Site Title -->
 <title>Fuzion Mobile LMS</title>
+{{-- <link href="{{ mix('css/app.css') }}" rel="stylesheet"> --}}
 <link rel="stylesheet" href="{{ asset('frontend/assets/css/bootstrap.min.css') }}">
 <link rel="stylesheet" href="{{ asset('frontend/assets/css/fontawesome.min.css') }}">
 <link rel="stylesheet" href="{{ asset('frontend/assets/css/slick.min.css') }}">
