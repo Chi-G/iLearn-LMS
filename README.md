@@ -50,4 +50,4 @@ Fuzion Mobile LMS is a Laravel-based platform designed to deliver Learning Manag
 - Access the application at `http://localhost:8000`
 - Admin Dashboard: `http://localhost:8000/admin`
 - Student Dashboard: `http://localhost:8000/student`
-- - Student Dashboard: `http://localhost:8000/instructor`
+- Instructor Dashboard: `http://localhost:8000/instructor`
