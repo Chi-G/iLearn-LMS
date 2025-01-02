@@ -64,6 +64,12 @@
                             <div class="td_height_30 td_height_lg_30"></div>
                             <x-auth-session-status class="mb-4" :status="session('status')" />
 
+                            @if (session('error'))
+                                <div class="alert alert-danger">
+                                    {{ session('error') }}
+                                </div>
+                            @endif
+
                             <form method="POST" action="{{ route('admin.login') }}">
                                 @csrf
 

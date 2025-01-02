@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Fuzion Mobile LMS - Student Dashboard</title>
+    <title>Fuzion Mobile - Student Dashboard</title>
     <meta name="robots" content="noindex, follow">
     <meta name="description" content="web development agency">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -155,13 +155,13 @@
         tabindex="-1">
         <div
             class="px-6 group-data-[sidebar-size=sm]:px-4 h-header flex items-center shrink-0 group-data-[sidebar-size=sm]:justify-center">
-            <a href="index.html" class="group-data-[sidebar-size=lg]:block hidden">
+            <a href="{{ url('/') }}" class="group-data-[sidebar-size=lg]:block hidden">
                 <img src="{{ asset('backend/assets/images/logo/logo-text.svg') }}" alt="logo"
                     class="group-[.dark]:hidden">
                 <img src="{{ asset('backend/assets/images/logo/logo-text-dark.svg') }}" alt="logo"
                     class="group-[.light]:hidden">
             </a>
-            <a href="index.html" class="group-data-[sidebar-size=lg]:hidden block">
+            <a href="{{ url('/') }}" class="group-data-[sidebar-size=lg]:hidden block">
                 <img src="{{ asset('backend/assets/images/logo/logo-icon.svg') }}" alt="logo">
             </a>
         </div>
@@ -192,7 +192,7 @@
                             class="dropdown-content max-h-0 group-data-[sidebar-size=sm]:!max-h-max overflow-hidden group-data-[sidebar-size=sm]:overflow-visible hidden group-data-[sidebar-size=lg]:block peer-[.show]/dp-btn:my-1.5 group-data-[sidebar-size=sm]:!my-0 group-data-[sidebar-size=lg]:w-[calc(theme('spacing.app-menu')_-_16px)] group-data-[sidebar-size=sm]:w-[calc(theme('spacing.app-menu-sm')_*_2.5)] group-data-[sidebar-size=sm]:absolute group-data-[sidebar-size=sm]:left-[calc(theme('spacing.app-menu-sm')_*_0.9)] top-full group-data-[sidebar-size=sm]:group-hover/sm:block group-data-[sidebar-size=sm]:bg-white dark:group-data-[sidebar-size=sm]:bg-dark-tooltip group-data-[sidebar-size=sm]:shadow-menu-dropdown transition-all duration-300">
                             <ul class="text-[14px] pl-1.5 group-data-[sidebar-size=sm]:pl-0">
                                 <li class="relative group/sub">
-                                    <a href="index.html"
+                                    <a href="{{ url('/') }}"
                                         class="relative peer/link text-gray-500 dark:text-dark-text-two leading-none px-5 py-2.5 group-data-[sidebar-size=lg]:pl-8 flex hover:text-primary-500 dark:hover:text-dark-text [&.active]:text-primary-500 dark:[&.active]:text-dark-text before:absolute before:top-[49%] before:-translate-y-1/2 before:left-4 before:size-1.5 before:rounded-50 before:border before:border-gray-400 dark:before:border-text-dark hover:before:border-none hover:before:bg-primary-400 dark:hover:before:bg-text-dark [&.active]:before:border-none group-data-[sidebar-size=sm]:after:block group-data-[sidebar-size=sm]:after:right-3 [&.active]:before:bg-primary-400 dark:[&.active]:before:bg-text-dark group-data-[sidebar-size=sm]:before:hidden">
                                         Admin
                                     </a>
@@ -1336,7 +1336,7 @@
                     class="flex items-center flex-wrap gap-1.5 *:flex-center *:gap-1.5 leading-none text-gray-900 dark:text-dark-text mt-2">
                     <li
                         class="text-primary-500 after:font-remix after:flex-center after:font-thin after:text-gray-900 after:size-5 after:content-['\ea6d'] after:translate-y-[1.4px] last:after:hidden [&.current-page]:text-gray-500 dark:[&.current-page]:text-dark-text-two">
-                        <a href="index.html">Home</a>
+                        <a href="{{ url('/') }}">Home</a>
                     </li>
                     <li
                         class="text-primary-500 after:font-remix after:flex-center after:font-thin after:text-gray-900 after:size-5 after:content-['\ea6d'] after:translate-y-[1.4px] last:after:hidden [&.current-page]:text-gray-500 dark:[&.current-page]:text-dark-text-two current-page">
