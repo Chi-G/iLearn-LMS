@@ -11,7 +11,7 @@
             Transform your space to reflect your personality!
         </p>
     </div>
-    <!-- Customizatin Options -->
+    <!-- Customization Options -->
     <div class="p-6 pt-3 divide-y divide-input-border/50 dark:divide-dark-border-four space-y-10">
         <!-- Theme Mode -->
         <div class="pt-3 first:pt-0">

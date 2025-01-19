@@ -2,6 +2,7 @@
 <html lang="en" class="group" data-sidebar-size="lg" data-card-style="square">
 
 <head>
+
     @include('student.include.css')
 </head>
 
@@ -69,6 +70,10 @@
 
     @include('student.include.js')
 </body>
+
+<footer>
+    @include('frontend.include.copywrite')
+</footer>
 
 </html>
 

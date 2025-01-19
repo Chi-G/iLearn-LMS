@@ -77,6 +77,10 @@
     @include('instructor.include.js')
 </body>
 
+<footer>
+    @include('frontend.include.copywrite')
+</footer>
+
 </html>
 
 

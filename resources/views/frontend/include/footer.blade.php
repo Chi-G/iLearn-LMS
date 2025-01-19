@@ -79,7 +79,7 @@
     <div class="td_footer_bottom td_fs_18">
         <div class="container">
             <div class="td_footer_bottom_in">
-                <p class="td_copyright mb-0">Copyright ©educve | All Right Reserved</p>
+                <p class="td_copyright mb-0">Copyright ©{{date('Y')}} | All Right Reserved</p>
                 <ul class="td_footer_widget_menu">
                     <li><a href="#"> Terms & Conditions</a></li>
                     <li><a href="#">Privacy & Policy</a></li>
