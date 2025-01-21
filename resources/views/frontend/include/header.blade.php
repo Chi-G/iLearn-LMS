@@ -79,40 +79,94 @@
                         </div>
                     </nav>
                 </div>
+
+                <!-- filepath: /c:/wampserver/www/FuzionMobileTech-LMS-PMS/resources/views/frontend/include/header.blade.php -->
+
                 <div class="td_main_header_right">
                     <div class="td_header_btns">
-                        <a href="{{ route('login') }}"
-                            class="td_btn td_style_1 td_type_1 td_radius_30 td_medium td_with_shadow">
-                            <span class="td_btn_in td_accent_color td_white_bg">
-                                <span>Sign in</span>
-                                <svg width="19" height="20" viewBox="0 0 19 20" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M15.1575 4.34302L3.84375 15.6567" stroke="currentColor" stroke-width="1.5"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                    <path
-                                        d="M15.157 11.4142C15.157 11.4142 16.0887 5.2748 15.157 4.34311C14.2253 3.41142 8.08594 4.34314 8.08594 4.34314"
-                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                            </span>
-                        </a>
-                        <a href="{{ route('register') }}"
-                            class="td_btn td_style_1 td_radius_30 td_medium td_with_shadow">
-                            <span class="td_btn_in td_white_color td_accent_bg">
-                                <span>Sign up</span>
-                                <svg width="19" height="20" viewBox="0 0 19 20" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M15.1575 4.34302L3.84375 15.6567" stroke="currentColor" stroke-width="1.5"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                    <path
-                                        d="M15.157 11.4142C15.157 11.4142 16.0887 5.2748 15.157 4.34311C14.2253 3.41142 8.08594 4.34314 8.08594 4.34314"
-                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                            </span>
-                        </a>
+                        @if (Auth::guard('admin')->check())
+                            <a href="{{ route('admin.dashboard') }}"
+                                class="td_btn td_style_1 td_radius_30 td_medium td_with_shadow">
+                                <span class="td_btn_in td_white_color td_accent_bg">
+                                    <span>Dashboard</span>
+                                    <svg width="19" height="20" viewBox="0 0 19 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.1575 4.34302L3.84375 15.6567" stroke="currentColor"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M15.157 11.4142C15.157 11.4142 16.0887 5.2748 15.157 4.34311C14.2253 3.41142 8.08594 4.34314 8.08594 4.34314"
+                                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </a>
+                        @elseif (Auth::guard('instructor')->check())
+                            <a href="{{ route('instructor.dashboard') }}"
+                                class="td_btn td_style_1 td_radius_30 td_medium td_with_shadow">
+                                <span class="td_btn_in td_white_color td_accent_bg">
+                                    <span>Dashboard</span>
+                                    <svg width="19" height="20" viewBox="0 0 19 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.1575 4.34302L3.84375 15.6567" stroke="currentColor"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M15.157 11.4142C15.157 11.4142 16.0887 5.2748 15.157 4.34311C14.2253 3.41142 8.08594 4.34314 8.08594 4.34314"
+                                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </a>
+                        @elseif (Auth::guard('web')->check())
+                            <a href="{{ route('student.dashboard') }}"
+                                class="td_btn td_style_1 td_radius_30 td_medium td_with_shadow">
+                                <span class="td_btn_in td_white_color td_accent_bg">
+                                    <span>Dashboard</span>
+                                    <svg width="19" height="20" viewBox="0 0 19 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.1575 4.34302L3.84375 15.6567" stroke="currentColor"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M15.157 11.4142C15.157 11.4142 16.0887 5.2748 15.157 4.34311C14.2253 3.41142 8.08594 4.34314 8.08594 4.34314"
+                                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </a>
+                        @else
+                            <a href="{{ route('login') }}"
+                                class="td_btn td_style_1 td_type_1 td_radius_30 td_medium td_with_shadow">
+                                <span class="td_btn_in td_accent_color td_white_bg">
+                                    <span>Sign in</span>
+                                    <svg width="19" height="20" viewBox="0 0 19 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.1575 4.34302L3.84375 15.6567" stroke="currentColor"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M15.157 11.4142C15.157 11.4142 16.0887 5.2748 15.157 4.34311C14.2253 3.41142 8.08594 4.34314 8.08594 4.34314"
+                                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </a>
+                            <a href="{{ route('register') }}"
+                                class="td_btn td_style_1 td_radius_30 td_medium td_with_shadow">
+                                <span class="td_btn_in td_white_color td_accent_bg">
+                                    <span>Sign up</span>
+                                    <svg width="19" height="20" viewBox="0 0 19 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.1575 4.34302L3.84375 15.6567" stroke="currentColor"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M15.157 11.4142C15.157 11.4142 16.0887 5.2748 15.157 4.34311C14.2253 3.41142 8.08594 4.34314 8.08594 4.34314"
+                                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </a>
+                        @endif
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
