@@ -56,7 +56,7 @@
                                     <span>Subscribe</span>
                                 </span>
                             </button>
-                        </form> 
+                        </form>
                     </div>
                     <div class="td_footer_social_btns td_fs_20">
                         <a href="#" class="td_center">
@@ -79,7 +79,7 @@
     <div class="td_footer_bottom td_fs_18">
         <div class="container">
             <div class="td_footer_bottom_in">
-                <p class="td_copyright mb-0">Copyright ©{{date('Y')}} | All Right Reserved</p>
+                <p class="td_copyright mb-0">Copyright © {{ date('Y') }} All Rights Reserved By iLearn</p>
                 <ul class="td_footer_widget_menu">
                     <li><a href="#"> Terms & Conditions</a></li>
                     <li><a href="#">Privacy & Policy</a></li>
