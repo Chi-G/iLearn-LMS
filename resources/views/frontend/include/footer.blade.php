@@ -56,7 +56,7 @@
                                     <span>Subscribe</span>
                                 </span>
                             </button>
-                        </form>
+                        </form> 
                     </div>
                     <div class="td_footer_social_btns td_fs_20">
                         <a href="#" class="td_center">

@@ -20,7 +20,7 @@
 
     @if (session('error'))
         <div class="alert alert-danger">
-            {{ session('error') }}
+            {{ session('error') }} 
         </div>
     @endif
 
@@ -1217,7 +1217,7 @@
             @csrf
         </form>
         <div class="mt-auto px-2.5 py-6 group-data-[sidebar-size=sm]:px-2">
-            <a href="{{ route('instructor.logout') }}"
+            <a href="{{ route('admin.logout') }}"
                 class="flex-center-between text-gray-500 font-semibold leading-none bg-gray-200 dark:bg-dark-icon dark:text-dark-text rounded-[10px] px-6 py-4 group-data-[sidebar-size=sm]:p-[12px_8px] group-data-[sidebar-size=sm]:justify-center dk-theme-card-square"
                 onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                 <span class="group-data-[sidebar-size=sm]:hidden block">Logout</span>
