@@ -80,8 +80,6 @@
                     </nav>
                 </div>
 
-                <!-- filepath: /c:/wampserver/www/FuzionMobileTech-LMS-PMS/resources/views/frontend/include/header.blade.php -->
-
                 <div class="td_main_header_right">
                     <div class="td_header_btns">
                         @if (Auth::guard('admin')->check())
