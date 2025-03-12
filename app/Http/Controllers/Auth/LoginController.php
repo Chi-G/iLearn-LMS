@@ -5,15 +5,11 @@ namespace App\Http\Controllers\Auth;
 use Exception;
 use App\Models\User;
 use App\Rules\Captcha;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Str;
-use Illuminate\Support\Facades\Hash;
+use Auth, Hash, Str, Mail;
 use App\Helper\EmailHelper;
 use Illuminate\Http\Request;
 use App\Mail\UserForgetPassword;
 use Illuminate\Support\Facades\Log;
-use Illuminate\Support\Facades\Config;
-use Illuminate\Support\Facades\Mail;
 use App\Http\Controllers\Controller;
 use Laravel\Socialite\Facades\Socialite;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
@@ -262,9 +258,9 @@ class LoginController extends Controller
         $gmail_redirect_url = GlobalSetting::where('key', 'gmail_redirect_url')->first();
 
 
-        Config::set('services.google.client_id', $gmail_client_id->value);
-        Config::set('services.google.client_secret', $gmail_secret_id->value);
-        Config::set('services.google.redirect', $gmail_redirect_url->value);
+        \Config::set('services.google.client_id', $gmail_client_id->value);
+        \Config::set('services.google.client_secret', $gmail_secret_id->value);
+        \Config::set('services.google.redirect', $gmail_redirect_url->value);
 
         return Socialite::driver('google')->redirect();
 
@@ -277,9 +273,9 @@ class LoginController extends Controller
         $gmail_redirect_url = GlobalSetting::where('key', 'gmail_redirect_url')->first();
 
 
-        Config::set('services.google.client_id', $gmail_client_id->value);
-        Config::set('services.google.client_secret', $gmail_secret_id->value);
-        Config::set('services.google.redirect', $gmail_redirect_url->value);
+        \Config::set('services.google.client_id', $gmail_client_id->value);
+        \Config::set('services.google.client_secret', $gmail_secret_id->value);
+        \Config::set('services.google.redirect', $gmail_redirect_url->value);
 
         $user = Socialite::driver('google')->user();
         $user = $this->create_user($user,'google');
@@ -299,9 +295,9 @@ class LoginController extends Controller
         $facebook_secret_id = GlobalSetting::where('key', 'facebook_secret_id')->first();
         $facebook_redirect_url = GlobalSetting::where('key', 'facebook_redirect_url')->first();
 
-        Config::set('services.facebook.client_id', $facebook_client_id->value);
-        Config::set('services.facebook.client_secret', $facebook_secret_id->value);
-        Config::set('services.facebook.redirect', $facebook_redirect_url->value);
+        \Config::set('services.facebook.client_id', $facebook_client_id->value);
+        \Config::set('services.facebook.client_secret', $facebook_secret_id->value);
+        \Config::set('services.facebook.redirect', $facebook_redirect_url->value);
 
         return Socialite::driver('facebook')->redirect();
     }
@@ -312,9 +308,9 @@ class LoginController extends Controller
         $facebook_secret_id = GlobalSetting::where('key', 'facebook_secret_id')->first();
         $facebook_redirect_url = GlobalSetting::where('key', 'facebook_redirect_url')->first();
 
-        Config::set('services.facebook.client_id', $facebook_client_id->value);
-        Config::set('services.facebook.client_secret', $facebook_secret_id->value);
-        Config::set('services.facebook.redirect', $facebook_redirect_url->value);
+        \Config::set('services.facebook.client_id', $facebook_client_id->value);
+        \Config::set('services.facebook.client_secret', $facebook_secret_id->value);
+        \Config::set('services.facebook.redirect', $facebook_redirect_url->value);
 
         $user = Socialite::driver('facebook')->user();
         $user = $this->create_user($user,'facebook');

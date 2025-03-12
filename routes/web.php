@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Admin\UserController;
@@ -11,7 +12,6 @@ use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\Auth\LoginController;
 
 use App\Http\Controllers\Admin\FrontEndManagementController;
-use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Auth\LoginController as StudentLoginController;
 use App\Http\Controllers\Auth\RegisterController as StudentRegisterController;
 
@@ -51,31 +51,30 @@ Route::group(['middleware' => [ 'HtmlSpecialchars', 'MaintenanceMode']], functio
     Route::group(['as' => 'student.', 'prefix' => 'student'], function(){
         Route::controller(StudentLoginController::class)->group(function () {
 
-            // Login-related routes
             Route::get('/login', 'custom_login_page')->name('login');
             Route::post('/store-login', 'store_login')->name('store-login');
             Route::get('/logout', 'student_logout')->name('logout');
 
-            // Social login routes (Google)
             Route::get('login/google', 'redirect_to_google')->name('login-google');
             Route::get('/callback/google', 'google_callback')->name('callback-google');
 
-            // Social login routes (Facebook)
             Route::get('login/facebook', 'redirect_to_facebook')->name('login-facebook');
             Route::get('/callback/facebook', 'facebook_callback')->name('callback-facebook');
 
-            // Password reset routes
             Route::get('/forget-password', 'custom_forget_page')->name('forget-password');
+
             Route::post('/send-forget-password', 'send_custom_forget_pass')->name('send-forget-password');
             Route::get('/reset-password', 'custom_reset_password')->name('reset-password');
             Route::post('/store-reset-password/{token}', 'store_reset_password')->name('store-reset-password');
-        });
 
-        // Registration routes grouped under StudentRegisterController
-        Route::controller(StudentRegisterController::class)->group(function () {
-            Route::get('/register', 'custom_register_page')->name('register');
-            Route::post('/store-register', 'store_register')->name('store-register');
-            Route::get('/register-verification', 'register_verification')->name('register-verification');
+            Route::controller(StudentRegisterController::class)->group(function () {
+
+                Route::get('/register', 'custom_register_page')->name('register');
+                Route::post('/store-register', 'store_register')->name('store-register');
+                Route::get('/register-verification', 'register_verification')->name('register-verification');
+            });
+
+
         });
     });
 

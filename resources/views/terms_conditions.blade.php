@@ -12,7 +12,7 @@
     <section>
       <div class="td_height_100 td_height_lg_50"></div>
         <div class="container">
-          <div class="row td_gap_y_50"> 
+          <div class="row td_gap_y_50">
             <div class="col-lg-12">
               <div class="td_blog_details">
 

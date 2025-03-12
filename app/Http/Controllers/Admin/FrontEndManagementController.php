@@ -5,8 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Frontend;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\File;
-use Illuminate\Support\Facades\Log;
+use File;
 
 class FrontEndManagementController extends Controller
 {
@@ -159,8 +158,8 @@ class FrontEndManagementController extends Controller
         }
 
         // Log language code and data for debugging
-        Log::info('Updating content for language: ' . $lang_code);
-        Log::info('Text Data:', $textData);
+        \Log::info('Updating content for language: ' . $lang_code);
+        \Log::info('Text Data:', $textData);
 
         // Handle data updates based on language
         if ($lang_code === 'en') {
@@ -198,7 +197,7 @@ class FrontEndManagementController extends Controller
                 if ($translation['language_code'] === $lang_code) {
                     $translations[$key]['values'] = $textData;
                     $translationExists = true;
-                    Log::info('Updating existing translation for: ' . $lang_code);
+                    \Log::info('Updating existing translation for: ' . $lang_code);
                     break;
                 }
             }
@@ -208,7 +207,7 @@ class FrontEndManagementController extends Controller
                     'language_code' => $lang_code,
                     'values' => $textData
                 ];
-                Log::info('Creating new translation for: ' . $lang_code);
+                \Log::info('Creating new translation for: ' . $lang_code);
             }
 
             // Handle new records without English data
@@ -244,7 +243,7 @@ class FrontEndManagementController extends Controller
         $frontend->data_translations = json_encode($translations);
 
         // Log final translations for verification
-        Log::info('Final translations:', ['translations' => $translations]);
+        \Log::info('Final translations:', ['translations' => $translations]);
 
         $frontend->save();
 

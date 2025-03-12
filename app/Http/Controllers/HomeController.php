@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Support\Facades\Session;
+use Session;
 use App\Models\User;
 use App\Rules\Captcha;
 use Illuminate\Http\Request;

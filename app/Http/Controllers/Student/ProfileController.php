@@ -3,11 +3,7 @@
 namespace App\Http\Controllers\Student;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\File;
-use Intervention\Image\Facades\Image;
-use Illuminate\Support\Str;
+use Auth, File, Image, Str, Hash;
 use App\Http\Controllers\Controller;
 use Modules\Coupon\App\Models\Coupon;
 use Modules\Course\App\Models\Course;
@@ -33,9 +29,6 @@ class ProfileController extends Controller
     public function dashboard(){
 
         $user = Auth::guard('web')->user();
-        if (!$user instanceof \App\Models\User) {
-            throw new \Exception('Authenticated user is not an instance of User model');
-        }
 
         $enrollments = CourseEnrollment::with('course_list')->where('student_id', $user->id)->take(10)->get();
 

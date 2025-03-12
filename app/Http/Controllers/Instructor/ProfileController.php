@@ -4,11 +4,7 @@ namespace App\Http\Controllers\Instructor;
 
 use Carbon\Carbon;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\File;
-use Illuminate\Support\Facades\Hash;
-use Intervention\Image\Facades\Image;
-use Illuminate\Support\Str;
+use Auth, File, Image, Str, Hash;
 use App\Http\Controllers\Controller;
 use Modules\Coupon\App\Models\Coupon;
 use Modules\Course\App\Models\Course;

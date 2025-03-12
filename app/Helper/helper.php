@@ -3,8 +3,6 @@
 use App\Models\Frontend;
 use Illuminate\Support\Facades\Log;
 use Modules\GlobalSetting\App\Models\GlobalSetting;
-use Illuminate\Support\Facades\Session;
-use Illuminate\Support\Facades\File;
 
 function admin_lang(){
     return 'en';

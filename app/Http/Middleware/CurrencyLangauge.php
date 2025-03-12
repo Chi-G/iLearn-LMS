@@ -3,7 +3,7 @@
 namespace App\Http\Middleware;
 
 use Closure;
-use Illuminate\Support\Facades\Session;
+use Session;
 use Illuminate\Http\Request;
 use Modules\Currency\App\Models\Currency;
 use Modules\Language\App\Models\Language;

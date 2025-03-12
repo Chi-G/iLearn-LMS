@@ -5,11 +5,7 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Str;
-use Intervention\Image\Facades\Image;
-use Illuminate\Support\Facades\File;
-use Illuminate\Support\Facades\Hash;
+use Auth, Str, Image, File, Hash;
 use App\Http\Requests\EditProfileRequest;
 use App\Http\Requests\PasswordChangeRequest;
 

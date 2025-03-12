@@ -1,173 +1,102 @@
-<!DOCTYPE html>
-<html class="no-js" lang="en">
+@extends('layout_inner_page')
 
-<head>
-    <!-- Meta Tags -->
-    @include('frontend.include.css')
+@section('title')
+    <title>{{ __('translate.Sign In') }}</title>
+@endsection
 
-    <style>
-        .error-message {
-            color: red;
-        }
-    </style>
-</head>
+@section('front-content')
 
-<body>
-    <!-- Start Preloader -->
-    <div class="td_preloader">
-        <div class="td_preloader_in">
-            <span></span>
-            <span></span>
-        </div>
-    </div>
-    <!-- End Preloader -->
-    <!-- Start Header Section -->
-    @include('frontend.include.second_header')
-    <!-- End Header Section -->
-    <!-- Start Page Heading Section -->
-    <section class="td_page_heading td_center td_bg_filed td_heading_bg text-center td_hobble"
-        data-src="{{ asset('frontend/assets/img/others/page_heading_bg.jpg') }}">
-        <div class="container">
-            <div class="td_page_heading_in">
-                <h1 class="td_white_color td_fs_48 td_mb_10">Login</h1>
-                {{-- <ol class="breadcrumb m-0 td_fs_20 td_opacity_8 td_semibold td_white_color">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active">Signin</li>
-                </ol> --}}
+@include('breadcrumb')
+
+<!-- Start Signin Section -->
+<section>
+    <div class="td_height_100 td_height_lg_50"></div>
+    <div class="container">
+        <div class="row td_gap_y_40">
+        <div class="col-lg-6">
+            <div class="td_sign_thumb">
+                <img src="{{ asset($general_setting->login_page_bg) }}" alt="" class="w-100 td_radius_10">
             </div>
-        </div>
-        <div class="td_page_heading_shape_1 position-absolute td_hover_layer_3"></div>
-        <div class="td_page_heading_shape_2 position-absolute td_hover_layer_5"></div>
-        <div class="td_page_heading_shape_3 position-absolute">
-            <img src="{{ asset('frontend/assets/img/others/page_heading_shape_3.svg') }}" alt="">
-        </div>
-        <div class="td_page_heading_shape_4 position-absolute">
-            <img src="{{ asset('frontend/assets/img/others/page_heading_shape_3.svg') }}" alt="">
-        </div>
-        <div class="td_page_heading_shape_5 position-absolute">
-            <img src="{{ asset('frontend/assets/img/others/page_heading_shape_3.svg') }}" alt="">
-        </div>
-        <div class="td_page_heading_shape_6 position-absolute td_hover_layer_3"></div>
-    </section>
-    <!-- End Page Heading Section -->
-    <!-- Start Signin Section -->
-    <section>
-        <div class="td_height_120 td_height_lg_80"></div>
-        <div class="container">
-            <div class="row td_gap_y_40">
-                <div class="col-lg-6">
-                    <div class="td_form_card td_style_1 td_radius_10 td_gray_bg_5">
-                        <div class="td_form_card_in">
-                            <h2 class="td_fs_36 td_mb_20">Login</h2>
-                            <hr>
 
-                            <div class="td_height_30 td_height_lg_30"></div>
-                            <x-auth-session-status class="mb-4" :status="session('status')" />
-                            <form method="POST" action="{{ route('login') }}">
-                                @csrf
+        </div>
+        <div class="col-lg-6">
+            <div class="td_form_card td_style_1 td_radius_10 td_gray_bg_5">
+                <form class="td_form_card_in" method="POST" action="{{ route('student.store-login') }}">
+                    @csrf
+                    <h2 class="td_fs_36 td_mb_20">{{ __('translate.Sign In') }}</h2>
+                    <hr>
+                    <div class="td_height_30 td_height_lg_30"></div>
 
-                                <input type="text" class="td_form_field td_mb_30 td_medium td_white_bg"
-                                    name="email" type="email" id="email" placeholder="Email *">
-                                <x-input-error :messages="$errors->get('email')" class="mt-2 error-message" />
-                                <input type="password" class="td_form_field td_mb_10 td_medium td_white_bg"
-                                    id="password" type="password" name="password" placeholder="Password *">
-                                <x-input-error :messages="$errors->get('password')" class="mt-2 error-message" />
-                                <div class="td_form_card_text_2 td_mb_50">
-                                    <div><a href="{{ route('password.request') }}"
-                                            class="td_semibold td_accent_color">Forgot Password?</a>
-                                    </div>
-                                    <div class="td_accent_color">
-                                        <div class="td_custom_checkbox">
-                                            <input type="checkbox" id="remember_me" name="remember">
-                                            <label for="remember_me">Remember me</label>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="td_form_card_bottom td_mb_25">
-                                    <button type="submit" class="td_btn td_style_1 td_radius_10 td_medium">
-                                        <span class="td_btn_in td_white_color td_accent_bg">
-                                            <span>Sign In</span>
-                                        </span>
-                                    </button>
-                                </div>
-                                <p class="td_form_card_text td_fs_20 td_medium td_heading_color mb-0">Don’t Have an
-                                    Account? <a href="{{ route('register') }}">Sign up</a></p>
-                            </form>
+                    <input type="email" class="td_form_field td_mb_30 td_medium td_white_bg" placeholder="{{ __('translate.Email') }} *" name="email" value="{{ old('email') }}">
+                    <input type="password" class="td_form_field td_mb_10 td_medium td_white_bg" placeholder="{{ __('translate.Password') }} *" name="password">
+                    <div class="td_form_card_text_2 td_mb_30">
+                        <div><a href="{{ route('student.forget-password') }}" class="td_semibold td_accent_color">{{ __('translate.Forgot Password?') }}</a></div>
+                        <div class="td_accent_color">
+                            <div class="td_custom_checkbox">
+                                <input type="checkbox" id="remember" name="remember">
+                                <label for="remember">{{ __('translate.Remember me') }}</label>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="td_sign_thumb">
-                        <img src="{{ asset('frontend/assets/img/others/login.jpg') }}" alt=""
-                            class="w-100 td_radius_10">
+
+                    @if($general_setting->recaptcha_status==1)
+                        <div class="td_mb_10">
+                            <div class="g-recaptcha" data-sitekey="{{ $general_setting->recaptcha_site_key }}"></div>
+                        </div>
+                    @endif
+
+                    <div class="td_form_card_bottom td_mb_25">
+                        <div class="w-100">
+
+                            <button type="submit" class="td_btn td_style_1 td_radius_30 td_medium edc-auth-btn" >
+                  <span class="td_btn_in td_white_color td_accent_bg">
+                    <span>{{ __('translate.Sign In') }}</span>
+                    <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15.1575 4.34302L3.84375 15.6567" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M15.157 11.4142C15.157 11.4142 16.0887 5.2748 15.157 4.34311C14.2253 3.41142 8.08594 4.34314 8.08594 4.34314" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                  </span>
+                            </button>
+                            <div>
+                                <p class="td_form_card_text td_fs_20 td_fs_sm_16 td_medium td_heading_color mb-0 text-center mt-3">{{ __('translate.Don’t Have an Account?') }} <a
+                                        href="{{ route('student.register') }}">{{ __('translate.Sign Up') }}</a></p>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-3 justify-content-center align-items-center mt-4">
+                            <div class="edc-line-sperator"></div>
+                            <p class="td_fs_20 mb-0 td_medium ">{{ __('translate.or sign up with') }}</p>
+                            <div class="edc-line-sperator"></div>
+                        </div>
+
+                        <div class="td_form_social td_fs_20">
+
+                            @if ($general_setting->is_gmail == 1)
+                                <a href="{{ route('student.login-google') }}" class="td_center">
+                                    <i class="fa-brands fa-google"></i>
+                                </a>
+                            @endif
+
+                            @if ($general_setting->is_facebook == 1)
+                                <a href="{{ route('student.login-facebook') }}" class="td_center">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            @endif
+
+                        </div>
                     </div>
-                </div>
+
+                </form>
             </div>
         </div>
-        <div class="td_height_120 td_height_lg_80"></div>
-    </section>
-    <!-- End Signin Section -->
-    <!-- Start Footer Section -->
-    @include('frontend.include.footer')
-    <!-- End Footer Section -->
-    <!-- Start Scroll Up Button -->
-    <div class="td_scrollup">
-        <i class="fa-solid fa-arrow-up"></i>
+        </div>
     </div>
-    <!-- End Scroll Up Button -->
-    <!-- Script -->
-    @include('frontend.include.js')
-</body>
+    <div class="td_height_100 td_height_lg_50"></div>
+</section>
+<!-- End Signin Section -->
 
-</html>
+@endsection
 
+  @push('js_section')
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-
-{{-- <x-guest-layout>
-    <!-- Session Status -->
-    <x-auth-session-status class="mb-4" :status="session('status')" />
-
-    <form method="POST" action="{{ route('login') }}">
-        @csrf
-
-        <!-- Email Address -->
-        <div>
-            <x-input-label for="email" :value="__('Email')" />
-            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
-            <x-input-error :messages="$errors->get('email')" class="mt-2" />
-        </div>
-
-        <!-- Password -->
-        <div class="mt-4">
-            <x-input-label for="password" :value="__('Password')" />
-
-            <x-text-input id="password" class="block mt-1 w-full"
-                            type="password"
-                            name="password"
-                            required autocomplete="current-password" />
-
-            <x-input-error :messages="$errors->get('password')" class="mt-2" />
-        </div>
-
-        <!-- Remember Me -->
-        <div class="block mt-4">
-            <label for="remember_me" class="inline-flex items-center">
-                <input id="remember_me" type="checkbox" class="rounded dark:bg-gray-900 border-gray-300 dark:border-gray-700 text-indigo-600 shadow-sm focus:ring-indigo-500 dark:focus:ring-indigo-600 dark:focus:ring-offset-gray-800" name="remember">
-                <span class="ms-2 text-sm text-gray-600 dark:text-gray-400">{{ __('Remember me') }}</span>
-            </label>
-        </div>
-
-        <div class="flex items-center justify-end mt-4">
-            @if (Route::has('password.request'))
-                <a class="underline text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800" href="{{ route('password.request') }}">
-                    {{ __('Forgot your password?') }}
-                </a>
-            @endif
-
-            <x-primary-button class="ms-3">
-                {{ __('Log in') }}
-            </x-primary-button>
-        </div>
-    </form>
-</x-guest-layout> --}}
+    @endpush

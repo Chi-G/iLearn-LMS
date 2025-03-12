@@ -3,14 +3,13 @@
 namespace App\Http\Controllers\Auth;
 
 use Exception;
+use Mail, Str;
 use App\Models\User;
 use App\Rules\Captcha;
 use App\Helper\EmailHelper;
-use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use App\Mail\UserRegistration;
 use Illuminate\Support\Facades\Log;
-use Illuminate\Support\Facades\Mail;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;

@@ -116,7 +116,7 @@
         </div>
         <div class="td_section_heading_right">
           <p class="td_section_subtitle td_fs_18 td_mb_16 ">
-           {{ __('Discover a wide range of industry-specific courses designed to enhance your skills and career') }}</p>
+           {{ __('translate. Far far away, behind the word mountains, far from the Consonantia, there live the blind texts. Separated') }}</p>
           <a href="{{ route('courses') }}" class="td_btn td_style_2 td_heading_color td_medium td_mb_10">
             {{ __('translate.See all Courses') }}
             <i>
@@ -147,7 +147,7 @@
       </div>
     </div>
     <div class="td_height_100 td_height_lg_50"></div>
-  </section> 
+  </section>
   <!-- End Category Section -->
 
 
@@ -598,7 +598,7 @@
         </p>
         <h2 class="td_section_title td_fs_48 mb-0">{{ __('translate.Our Expert Instructor') }}</h2>
         <p class="td_section_subtitle td_fs_18 mb-0">
-            {{ __('Learn from industry experts and enhance your skills with our comprehensive courses.') }} <br>{{ __('Join our community of learners today.') }}</p>
+            {{ __('translate.Far far away, behind the word mountains, far from the Consonantia, there') }} <br>{{ __('translate.live the blind texts. Separated they marks grove right') }}</p>
       </div>
       <div class="td_height_50 td_height_lg_50"></div>
       <div class="row td_gap_y_30">
@@ -672,7 +672,7 @@
         </p>
         <h2 class="td_section_title td_fs_48 mb-0">{{ __('translate.What Our Students Say About') }} <br>{{ __('translate.Our Online Services') }} </h2>
         <p class="td_section_subtitle td_fs_18 mb-0">
-            {{ __('Discover a wide range of industry-specific courses designed to enhance your skills and career.') }} <br>{{ __('sJoin our community of learners today') }}</p>
+            {{ __('translate.Far far away, behind the word mountains, far from the Consonantia, there live') }} <br>{{ __('translate.the blind texts. Separated they marks grove') }}</p>
       </div>
       <div class="td_height_50 td_height_lg_50"></div>
       <div class="td_slider td_style_1 td_slider_gap_24 td_remove_overflow wow fadeInUp qs-h1-testimonial_dots" data-wow-duration="1s"
