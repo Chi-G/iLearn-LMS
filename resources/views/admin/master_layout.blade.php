@@ -118,7 +118,6 @@
 														<!-- End Header Message -->
 
 
-
 														<!-- Header Settings -->
 														<div class="crancy-header__settings">
 															<a class="crancy-header__blink" href="{{ route('admin.general-setting') }}">
@@ -145,7 +144,7 @@
 															@else
 															<img src="{{ asset($general_setting->default_avatar) }}" alt="#">
 															@endif
-															
+
 														</div></a>
 														<!-- crancy Profile Hover -->
 
@@ -220,7 +219,7 @@
                 $(document).ready(function () {
 
 					const session_notify_message = @json(Session::get('message'));
-					
+
 					if(session_notify_message != null){
 						const session_notify_type = @json(Session::get('alert-type', 'info'));
 						switch (session_notify_type) {
@@ -240,7 +239,7 @@
 					}
 
 					const validation_errors = @json($errors->all());
-					
+
 					if (validation_errors.length > 0) {
 						validation_errors.forEach(error => toastr.error(error));
 					}

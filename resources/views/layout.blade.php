@@ -279,9 +279,9 @@
                                             <a href="{{ route('courses', ['page_view' => 'grid']) }}">{{ __('translate.Courses') }}</a>
                                         </li>
                                     @else
-                                        <li class="menu-item-has-children">
+                                        <li class="menu-item">
                                             <a href="{{ route('courses') }}">{{ __('translate.Courses') }}</a>
-                                            <ul>
+                                            {{-- <ul>
                                                 <li>
                                                     <a href="{{ route('courses', ['page_view' => 'grid']) }}">{{ __('translate.Courses Grid View') }}</a>
                                                 </li>
@@ -291,7 +291,7 @@
                                                 <li>
                                                     <a href="{{ route('courses', ['page_view' => 'sidebar_grid_view']) }}">{{ __('translate.Courses Grid With Sidebar') }}</a>
                                                 </li>
-                                            </ul>
+                                            </ul> --}}
                                         </li>
                                     @endif
 
@@ -305,14 +305,14 @@
                                     @elseif ($general_setting->blog_theme == 'without_sidebar')
                                         <li><a href="{{ route('blogs') }}">{{ __('translate.Blogs') }}</a></li>
                                     @else
-                                        <li class="menu-item-has-children">
-                                            <a href="javascript:;">{{ __('translate.Blogs') }}</a>
-                                            <ul>
+                                        <li class="menu-item">
+                                            <a href="{{ route('blogs') }}">{{ __('translate.Blogs') }}</a>
+                                            {{-- <ul>
                                                 <li><a href="{{ route('blogs') }}">{{ __('translate.Blogs') }}</a></li>
                                                 <li>
                                                     <a href="{{ route('blogs', ['page_view' => 'blogs_with_sidebar']) }}">{{ __('translate.Blog With Sidebar') }}</a>
                                                 </li>
-                                            </ul>
+                                            </ul> --}}
                                         </li>
                                     @endif
 

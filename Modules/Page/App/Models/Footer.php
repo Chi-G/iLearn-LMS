@@ -15,7 +15,7 @@ class Footer extends Model
      * The attributes that are mass assignable.
      */
     protected $fillable = [];
-    
+
     protected static function newFactory(): FooterFactory{}
 
     protected $hidden = ['front_translate'];
